@@ -48,8 +48,11 @@ namespace EKidApi
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseCors(builder => {
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            });
 
-            app.UseRouting();
+            app.UseRouting();           
 
             app.UseAuthorization();
 

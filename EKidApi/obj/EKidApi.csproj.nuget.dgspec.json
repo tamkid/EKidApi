@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\TamNguyen\\NetCore\\EKidApi\\EKidApi\\EKidApi.csproj": {}
+    "E:\\Dev\\DotNet\\EKidApi\\EKidApi\\EKidApi.csproj": {}
   },
   "projects": {
-    "E:\\TamNguyen\\NetCore\\EKidApi\\EKidApi\\EKidApi.csproj": {
+    "E:\\Dev\\DotNet\\EKidApi\\EKidApi\\EKidApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\TamNguyen\\NetCore\\EKidApi\\EKidApi\\EKidApi.csproj",
+        "projectUniqueName": "E:\\Dev\\DotNet\\EKidApi\\EKidApi\\EKidApi.csproj",
         "projectName": "EKidApi",
-        "projectPath": "E:\\TamNguyen\\NetCore\\EKidApi\\EKidApi\\EKidApi.csproj",
-        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "E:\\TamNguyen\\NetCore\\EKidApi\\EKidApi\\obj\\",
+        "projectPath": "E:\\Dev\\DotNet\\EKidApi\\EKidApi\\EKidApi.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "E:\\Dev\\DotNet\\EKidApi\\EKidApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://symphonyvsts.pkgs.visualstudio.com/_packaging/deloitte-nuget/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
