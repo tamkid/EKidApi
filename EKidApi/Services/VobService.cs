@@ -30,6 +30,8 @@ namespace EKidApi.Services
         {
             Response_Vob_GetAll response = new Response_Vob_GetAll();
 
+            bool isAll = limit <= 0;
+
             try
             {
                 Expression<Func<Vob, bool>> filter = null;
@@ -41,10 +43,20 @@ namespace EKidApi.Services
 
                 var query = _unitOfWork.Repository<Vob>()
                                 .GetQuery( filter: filter
-                                         , orderBy: q => q.OrderByDescending(s => s.CreatedDate));
+                                         , orderBy: q => q.OrderBy(s => s.Word));
 
                 var total = query.Count();
-                var lstEnt = await query.Skip(page * limit).Take(limit).ToListAsync();
+
+                List<Vob> lstEnt;
+                if (!isAll)
+                {
+                    lstEnt = await query.Skip(page * limit).Take(limit).ToListAsync();
+                }
+                else
+                {
+                    lstEnt = await query.ToListAsync();
+                }
+
                 var lstData = _mapper.Map<List<VobModel>>(lstEnt);
 
                 var responseData = new ResponseData_Vob_GetAll()
