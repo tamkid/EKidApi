@@ -12,6 +12,7 @@ namespace EKidApi.Models
         public int WordType { get; set; }
         public string Spelling { get; set; }
         public string Meaning { get; set; }
+        public string Example { get; set; }
         public DateTime? CreatedDate { get; set; }
 
         public string WordTypeName { get; set; }

@@ -165,6 +165,7 @@ namespace EKidApi.Services
                 entity.WordType = request.WordType;
                 entity.Spelling = request.Spelling;
                 entity.Meaning = request.Meaning;
+                entity.Example = request.Example;
                 await _unitOfWork.Save_Async();
 
                 response.id = entity.Id;

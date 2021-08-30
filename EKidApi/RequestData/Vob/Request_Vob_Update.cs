@@ -16,5 +16,6 @@ namespace EKidApi.RequestData.Vob
         public string Spelling { get; set; }
         [Required]
         public string Meaning { get; set; }
+        public string Example { get; set; }
     }
 }

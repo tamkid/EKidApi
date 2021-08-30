@@ -38,6 +38,10 @@ namespace EKidApi.EF
                 entity.Property(e => e.Word)
                     .HasMaxLength(30)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Example)
+                    .HasMaxLength(800)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);
